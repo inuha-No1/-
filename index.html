@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>犬派カップ公式ページ</title>
+
+  <!-- ★ ここに追加する！ ★ -->
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🐶 犬派カップ</h1>
+<nav>
+  <a href="index.html">トップ</a>
+  <a href="rules.html">ルール</a>
+  <a href="results.html">歴戦</a>
+  <a href="quotes.html">迷言集</a>
+</nav>
+</header>
+
+<section class="card">
+  <h2>犬派カップとは？</h2>
+  <p>
+    犬派カップとは、犬派代表のいぬはが主催する犬派VS猫派のLOLカスタム大会である。
+  </p>
+</section>
+
+<!-- 第一回 -->
+<section class="card">
+  <h2>第一回 犬派カップ（2025年12月12日）</h2>
+
+  <h3>参加者</h3>
+
+<section class="card">
+  <h2>🐶</h2>
+
+  <div class="slider">
+    <button class="arrow left" onclick="prev()">←</button>
+
+    <div class="slide">
+      <img id="icon" src="assets/inuhaaikonn.jpg" alt="icon">
+      <p id="name">いぬは</p>
+    </div>
+
+    <button class="arrow right" onclick="next()">→</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>🐱</h2>
+
+  <div class="slider">
+    <button class="arrow left" onclick="prev2()">←</button>
+
+    <div class="slide">
+      <img id="icon2" src="assets/nasuaikonn.png" alt="icon">
+      <p id="name2">なす</p>
+    </div>
+
+    <button class="arrow right" onclick="next2()">→</button>
+  </div>
+</section>
+
+
+  
+<!-- 第二回 -->
+<section class="card">
+  <h2>第二回 犬派カップ（2026年1月31日）</h2>
+
+  <h3>参加者</h3>
+
+<section class="card">
+  <h2>🐶</h2>
+
+  <div class="slider">
+    <button class="arrow left" onclick="prev3()">←</button>
+
+    <div class="slide">
+      <img id="icon3" src="assets/izanagiaikonn.jpg" alt="icon">
+      <p id="name3">いざなぎ</p>
+    </div>
+
+    <button class="arrow right" onclick="next3()">→</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>🐱</h2>
+
+  <div class="slider">
+    <button class="arrow left" onclick="prev4()">←</button>
+
+    <div class="slide">
+      <img id="icon4" src="assets/inuhaaikonn.jpg" alt="icon">
+      <p id="name4">いぬは</p>
+    </div>
+
+    <button class="arrow right" onclick="next4()">→</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>迷言集動画</h2>
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/AOBjPyPMreA"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<section class="card">
+  <h2>いぬは</h2>
+
+  <a class="twitter-timeline"
+     href="https://twitter.com/axmxs3_">
+     Tweets by axmxs3_
+  </a>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+
+<footer>
+  <p>© 犬派カップ</p>
+</footer>
+
+<script>
+  const members = [
+    { name: "いぬは", icon: "assets/inuhaaikonn.jpg" },
+    { name: "さや", icon: "assets/sayaaikonn.jpg" },
+    { name: "いざなぎ", icon: "assets/izanagiaikonn.jpg" },
+    { name: "たにおか", icon: "assets/taniokaaikonn.jpg" },
+    { name: "すさのお", icon: "assets/susanooaikonn.jpg" },
+  ];
+
+  let index = 0;
+
+  function update() {
+    document.getElementById("name").textContent = members[index].name;
+    document.getElementById("icon").src = members[index].icon;
+  }
+
+  function next() {
+    index = (index + 1) % members.length;
+    update();
+  }
+
+  function prev() {
+    index = (index - 1 + members.length) % members.length;
+    update();
+  }
+</script>
+
+<script>
+  const members2 = [
+    { name: "なす", icon: "assets/nasuaikonn.png" },
+    { name: "きのたけ", icon: "assets/kinotakeaikonn.jpg" },
+    { name: "たくま", icon: "assets/takumaaikonn.jpg" },
+    { name: "ちむ", icon: "assets/timuaikonn.jpg" },
+    { name: "そーた", icon: "assets/sotaaikonn.jpg" },
+    { name: "みかん", icon: "assets/mikannaikonn.jpg" },
+    { name: "らっく", icon: "assets/aikonn.png" }
+  ];
+
+  let index2 = 0;
+
+  function update2() {
+    document.getElementById("name2").textContent = members2[index2].name;
+    document.getElementById("icon2").src = members2[index2].icon;
+  }
+
+  function next2() {
+    index2 = (index2 + 1) % members2.length;
+    update2();
+  }
+
+  function prev2() {
+    index2 = (index2 - 1 + members2.length) % members2.length;
+    update2();
+  }
+</script>
+
+<script>
+  const members3 = [
+    { name: "いざなぎ", icon: "assets/izanagiaikonn.jpg" },
+    { name: "あじぱん", icon: "assets/ajiaikonn.jpg" },
+    { name: "さや", icon: "assets/sayaaikonn.jpg" },
+    { name: "もえぴ", icon: "assets/moeaikonn.jpg" },
+    { name: "にんじんぱん", icon: "assets/ninnpannaikonn.jpg" },
+    { name: "ぐりあま", icon: "assets/guriaikonn.jpg" },
+  ];
+
+  let index3 = 0;
+
+  function update3() {
+    document.getElementById("name3").textContent = members3[index3].name;
+    document.getElementById("icon3").src = members3[index3].icon;
+  }
+
+  function next3() {
+    index3 = (index3 + 1) % members3.length;
+    update3();
+  }
+
+  function prev3() {
+    index3 = (index3 - 1 + members3.length) % members3.length;
+    update3();
+  }
+</script>
+
+<script>
+  const members4 = [
+    { name: "いぬは", icon: "assets/inuhaaikonn.jpg" },
+    { name: "はと", icon: "assets/hatoaikonn.jpg" },
+    { name: "さや", icon: "assets/sayaaikonn.jpg" },
+    { name: "みかん", icon: "assets/mikannaikonn.jpg" },
+    { name: "あるかり", icon: "assets/arukariaikonn.jpg" },
+    { name: "きのたけ", icon: "assets/kinotakeaikonn.jpg" },
+  ];
+
+  let index4 = 0;
+
+  function update4() {
+    document.getElementById("name4").textContent = members4[index4].name;
+    document.getElementById("icon4").src = members4[index4].icon;
+  }
+
+  function next4() {
+    index4 = (index4 + 1) % members4.length;
+    update4();
+  }
+
+  function prev4() {
+    index4 = (index4 - 1 + members4.length) % members4.length;
+    update4();
+  }
+</script>
+
+</body>
+</html>

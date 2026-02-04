@@ -1,0 +1,85 @@
+body {
+  font-family: "Yusei Magic", sans-serif;
+  background: #fff8f0;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+header {
+  background: #ffdac1;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #ffbfa3;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.card {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 85%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #ff8b94;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ffd5e5;
+  margin-top: 30px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slide {
+  text-align: center;
+}
+
+.slide img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+}
+
+.arrow {
+  background: #ffe4c4;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.arrow:hover {
+  background: #ffcfaa;
+}
